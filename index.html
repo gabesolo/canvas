@@ -2,19 +2,16 @@
 <html>
   <style>
     @media only screen{
-      #red{
-        display: block;
-      }
 
     }
 
   </style>
 </head>
 <body>
-  <input id="red" type="button" value="red" onclick="red()" / style="display: none">
-  <input id="blue" type="button" value="blue" onclick="blue()" /style="display: none">
-  <input id="green" type="button" value="green" onclick="green()" /style="display: none">
-  <input id="yellow" type="button" value="yellow" onclick="yellow()" /style="display: none">
+  <input id="red" type="button" value="red" onclick="red()" />
+  <input id="blue" type="button" value="blue" onclick="blue()" />
+  <input id="green" type="button" value="green" onclick="green()" />
+  <input id="yellow" type="button" value="yellow" onclick="yellow()" />
   <canvas id="sig-canvas" width="500px" height="500px" style="position:absolute;top:10%;left:10%;border:2px solid;">
   </canvas>
 </body>
@@ -52,7 +49,7 @@
       document.getElementById("green").addEventListener("click", function(event) {ctx.strokeStyle = "green";});
       document.getElementById("red").addEventListener("click", function(event) {ctx.strokeStyle = "red";});
       document.getElementById("blue").addEventListener("click", function(event) {ctx.strokeStyle = "blue";});
-      document.getElementById("yellow").addEventListener("click", function(event) {ctx.strokeStyle = "yellow";});
+      document.getElementById("yellow").addEventListener("click", function(event) {ctx.strokeStyle = "green";});
 
       window.addEventListener("orientationchange", function() {
     canvas.width = canvas.width, ctx.strokeStyle = "red";
