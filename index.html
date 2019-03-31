@@ -39,6 +39,10 @@
         if (obj == 32) {canvas.width = canvas.width, ctx.strokeStyle = "red";}
         }, false);
 
+      window.addEventListener("orientationchange", function() {
+    canvas.width = canvas.width, ctx.strokeStyle = "red";
+    });
+
       // Set up mouse events for drawing
       var drawing = false;
       var mousePos = { x:0, y:0 };
